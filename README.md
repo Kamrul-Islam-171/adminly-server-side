@@ -3,7 +3,7 @@
 This is the server-side code for **Adminly**, a user management web application built with **Node.js**, **Express**, and **MongoDB**. The server handles user registration, authentication, and user management, including blocking, unblocking, and deleting users. **JWT** is used for secure authentication, and **bcrypt** is used for password hashing.
 
 ## Live Demo
-[Adminly - Live Link]()
+[Adminly - Live Link](https://polite-rugelach-a09ad3.netlify.app/)
 
 ## Client-Side Repository
 [Client-Side Code - GitHub](https://github.com/Kamrul-Islam-171/adminly-client-side)
