@@ -70,6 +70,11 @@ async function run() {
 
     app.post("/users", async (req, res) => {
       const info = req.body;
+      const email = info.email;
+      const isExist = await userCollection.findOne({email});
+      if(isExist) {
+        return res.send({message:"exist"})
+      }
       const hash = await bcrypt.hash(info.password, 10);
       info.password = hash;
       const user = await userCollection.insertOne(info);
